@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CollectionsViewDemo.MainPage"
+             Title="Demo Pages">
+
+        <!-- Place new controls here -->
+    <TableView Intent="Menu">
+        <TableRoot>
+            <TableSection>
+                <ViewCell x:Name="vcDataBinding" Tapped="vcDataBinding_Tapped">
+                    <Label Text="Data Binding"></Label>
+                </ViewCell>
+                <ViewCell x:Name="vcBasic" Tapped="vcBasic_Tapped">
+                    <Label Text="Basic Collection View"></Label>
+                </ViewCell>
+                <ViewCell x:Name="vcItemLayout" Tapped="vcItemLayout_Tapped">
+                    <Label Text="Item Layout"></Label>
+                </ViewCell>
+                <ViewCell x:Name="vcSelection" Tapped="vcSelection_Tapped">
+                    <Label Text="Collection View With Selection"></Label>
+                </ViewCell>
+                <ViewCell x:Name="vcContext" Tapped="vcContext_Tapped">
+                    <Label Text="Collection View With Context Menu"></Label>
+                </ViewCell>
+                <ViewCell x:Name="vcRefresh" Tapped="vcRefresh_Tapped">
+                    <Label Text="Collection View With Refresh"></Label>
+                </ViewCell>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+
+</ContentPage>
